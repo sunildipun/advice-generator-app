@@ -1,0 +1,26 @@
+/* Setting the color to variables **/
+:root {
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+}
+
+/* reseting and normalising the property*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--darkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
