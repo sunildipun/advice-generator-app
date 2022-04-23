@@ -1,6 +1,15 @@
 const adviceTextDom = document.querySelector('.card__advice');
 const adviceIdDom = document.querySelector('.advice-id');
 
+const cardElement = document.querySelector('.card');
+console.log('CardElement', cardElement);
+const myPseudoElement = window.getComputedStyle(cardElement, '::after');
+console.log('PseudoELement', myPseudoElement);
+
+cardElement.addEventListener('click', event => {
+    fetchAdvice();
+});
+
 async function fetchAdvice() {
     try {
         const response = await fetch('https://api.adviceslip.com/advice');
