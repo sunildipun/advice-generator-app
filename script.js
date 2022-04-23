@@ -1,12 +1,14 @@
 const adviceTextDom = document.querySelector('.card__advice');
 const adviceIdDom = document.querySelector('.advice-id');
 
-const cardElement = document.querySelector('.card');
-console.log('CardElement', cardElement);
-const myPseudoElement = window.getComputedStyle(cardElement, '::after');
-console.log('PseudoELement', myPseudoElement);
+const dice = document.querySelector('.dice');
 
-cardElement.addEventListener('click', event => {
+const desktopImage = document.getElementById('desktop');
+const mobileImage = document.getElementById('mobile');
+
+
+
+dice.addEventListener('click', event => {
     fetchAdvice();
 });
 

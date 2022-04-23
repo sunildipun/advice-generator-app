@@ -56,6 +56,14 @@ body {
     padding: 1em 0;
 }
 
+#desktop {
+    display: flex;
+};
+
+#mobile {
+    display: none;
+};
+
 .divider-icon {
     position: relative;
     top: 7px;
@@ -78,12 +86,28 @@ body {
     background-color: var(--lightCyan);
 }
 
-.card::after {
+.dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: var(--neonGreen);
+    position: relative;
+    top: 3.5em;
+}
+
+.dice:hover {
+    cursor: pointer;
+    box-shadow:  1px 1px 10px 10px #52ffa880;
+}
+
+/* .card::after {
     content: ' ';
     height: 3em;
     width: 3em;
     border-radius: 50%;
-    /* background-repeat: round; */
     position: relative;
     top: 50px;
     background: var(--neonGreen) url(./images/icon-dice.svg) center center no-repeat;
@@ -93,10 +117,18 @@ body {
 .card:hover::after {
     background-color: red;
     cursor: pointer;
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .card {
         width: 90%;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
     }
   }
