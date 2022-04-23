@@ -26,14 +26,15 @@ body {
 }
 
 .card {
-    width: 28rem;
-    background-color: var(--grayishBlue);
+    width: 32rem;
+    background-color: var(--darkGrayishBlue);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
     border-radius: 1rem;
+    /* height: 15rem; */
 }
 
 .card__header {
@@ -51,9 +52,7 @@ body {
 
 .card-divider {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em 0;
+    padding: 1em 0 0;
 }
 
 #desktop {
@@ -122,6 +121,11 @@ body {
 @media only screen and (max-width: 600px) {
     .card {
         width: 90%;
+        /* height: 17rem; */
+    }
+
+    .dice {
+        top: 3.2rem
     }
 
     #desktop {
